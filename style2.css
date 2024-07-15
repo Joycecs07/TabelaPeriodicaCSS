@@ -1,0 +1,124 @@
+body{
+    background-color: black;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;/*margem*/
+    align-items: flex-start;
+    /*width: 100%;*/
+    padding-top: 90px;/*margem*/
+    flex-wrap: nowrap;/*Impede que tenha quebra de quadrados*/
+}
+
+.coluna {
+    flex: 1auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 2px;
+    /* Espaçamento entre as colunas */
+}
+
+.coluna:nth-child(2) {
+    margin-top: 0px;
+
+}
+
+.coluna:nth-child(3) {
+    margin-top: 0px;
+
+}
+
+.quadrado {
+    width: 6em;
+    /* Largura da célula */
+    height: 6em;
+    /* Altura da célula */
+    margin-bottom: 1px;
+    /* Espaçamento entre as células */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transition: transform 1s;
+    transform: translateX(0) scale(1);
+
+}
+
+.quadrado:hover,
+.quadrado:focus {
+
+    transform: translateX(10px) scale(1.5);
+    z-index: 1;
+}
+
+.sup-top {
+    position: absolute;
+    top: 1px;
+    /* move o <sup> para o topo do quadrado */
+    left: 5px;
+    /* move o <sup> para o canto esquerdo do quadrado */
+}
+
+.centered-content {
+    text-align: center;
+}
+
+/* Ajustes de estilo para o conteúdo interno */
+.centered-content b {
+    font-size: 1.5em;
+}
+
+.centered-content sub {
+    font-size: 0.8em;
+}
+
+.metais_alcalinos {
+    color: white;
+    box-shadow: 0 0 10px #ff77a4, 0 0 10px #FFF0F5, 0 0 10px #FFF0F5;
+}
+
+.metais_a_t {
+    color: #fff;
+    box-shadow: 0 0 10px #f7a156, 0 0 10px #FFDAB9, 0 0 10px #FFDAB9;
+}
+.metais_de_transicao{
+    color: #fff;
+    box-shadow: 0 0 10px #fceb57, 0 0 10px #fffacd, 0 0 10px #fffacd;
+}
+.lantanideos{
+    color: #FFf;
+    box-shadow: 0 0 10px #FF69B4, 0 0 10px #FF69B4, 0 0 10px #FF69B4;
+}
+.actinideos{
+    color: #fff;
+    box-shadow: 0 0 10px #DDA0DD, 0 0 10px #DDA0DD, 0 0 10px #DDA0DD;
+}
+.gases_nobres{
+    color: #fff;
+    box-shadow: 0 0 10px #d173d1, 0 0 10px #D8BFD8, 0 0 10px #D8BFD8;
+}
+.halogenios{
+    color: #fff;
+    box-shadow: 0 0 10px #6868f8, 0 0 10px #E6E6FA, 0 0 10px #E6E6FA;
+}
+.outros_nmetais{
+    color: #fff;
+    box-shadow: 0 0 10px #002280, 0 0 10px #002280, 0 0 10px #002280;
+}
+.semi_metais{
+    color: #fff;
+    box-shadow: 0 0 10px #43ffff, 0 0 10px #E0FFFF, 0 0 10px #E0FFFF;
+}
+.metais_p_t{
+    color: white;
+    box-shadow: 0 0 10px #10ff10, 0 0 10px #f0fff0, 0 0 10px #f0fff0;
+}
+.hidrogenio{
+    color: white;
+    box-shadow: 0 0 10px #f8f8ff, 0 0 10px #f8f8ff, 0 0 10px #f8f8ff;
+}
